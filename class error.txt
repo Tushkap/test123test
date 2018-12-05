@@ -1,0 +1,378 @@
+
+       /* Tue Dec 04 2018 15:43:19.0230 */    Start filter processing (phase 1) -- Operation - SET on OBJSTR:Class - 000000000002101
+       /* Tue Dec 04 2018 15:43:19.0230 */  Checking "OBJSTR:Class_CheckSpaceInName01" (1)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpInt1 (250400019) = -1
+       /* Tue Dec 04 2018 15:43:19.0230 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchyCallGuide" (1)
+          --> Passed -- perform actions
+               0 : Call Guide "OBJSTR:Class:Hierachy:GenerateHierarchy"
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchy000" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpHiearchyCount (530030400) = 
+                     zTmpClassID02 (530028500) = BT_Component
+                     zTmpClassID01 (530028400) = BT_ALGOREXCOMPONENT
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchy001" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpHiearchyCount (530030400) = 1
+                     zTmpClassID03 (530028600) = BT_ALGOREXCOMPONENT;
+               1 : Set Fields
+                     zTmpClassID02 (530028500) = BMC_ASSETBASE
+                     zTmpClassID01 (530028400) = BT_Component
+               2 : Goto Guide Label
+               Skip actions, goto guide label Loop
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchy001" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpHiearchyCount (530030400) = 2
+                     zTmpClassID03 (530028600) = BT_ALGOREXCOMPONENT;BT_Component;
+               1 : Set Fields
+                     zTmpClassID02 (530028500) = 
+                     zTmpClassID01 (530028400) = BMC_ASSETBASE
+               2 : Goto Guide Label
+               Skip actions, goto guide label Loop
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchy001" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpHiearchyCount (530030400) = 3
+                     zTmpClassID03 (530028600) = BT_ALGOREXCOMPONENT;BT_Component;BMC_ASSETBASE;
+               1 : Set Fields
+                     zTmpClassID02 (530028500) = 
+                     zTmpClassID01 (530028400) = 
+               2 : Goto Guide Label
+      
+ 1         >         Skip actions, goto guide label Loop
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchy001" (0)
+          --> Failed qualification -- perform else actions
+               0 : Exit Guide "OBJSTR:Class:Hierachy:GenerateHierarchy"
+               Exit current guide: OBJSTR:Class:Hierachy:GenerateHierarchy
+       /* Tue Dec 04 2018 15:43:19.0390 */ Call Guide "OBJSTR:Class:Hierachy:GenerateHierarchy" (return).
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class_CheckSpaceInName02" (2)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class_CheckSpaceInSuperClass01" (3)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpInt1 (250400019) = -1
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class_CheckSpaceInSuperClass02" (4)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchyDynamicLevelsCallGuide" (100)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpClassID05 (530030500) = OBJSTR:Class:Hierachy:GenerateHierarchy3Levels
+               1 : Call Guide ""
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchyDeconstructString" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpInteger1 (500005000) = 19
+               1 : Set Fields
+                     zTmpClassID04 (530028700) = BT_ALGOREXCOMPONENT
+                     zTmpInteger3 (500005100) = 47
+               2 : Set Fields
+                     zTmpClassID03 (530028600) = BT_Component;BMC_ASSETBASE;
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchySetClass3" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     ClassID03 (301143100) = BT_ALGOREXCOMPONENT
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchyDeconstructString" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpInteger1 (500005000) = 12
+               1 : Set Fields
+                     zTmpClassID04 (530028700) = BT_Component
+                     zTmpInteger3 (500005100) = 27
+               2 : Set Fields
+                     zTmpClassID03 (530028600) = BMC_ASSETBASE;
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchySetClass2" (0)
+          --> Passed -- perform actions
+    
+ 390620   >           0 : Set Fields
+                     ClassID02 (301143000) = BT_Component
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchyDeconstructString" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zTmpInteger1 (500005000) = 13
+               1 : Set Fields
+                     zTmpClassID04 (530028700) = BMC_ASSETBASE
+                     zTmpInteger3 (500005100) = 14
+               2 : Set Fields
+                     zTmpClassID03 (530028600) = 
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class:Hierachy:GenertateHierarchySetClass1" (0)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     ClassID01 (301142000) = BMC_ASSETBASE
+       /* Tue Dec 04 2018 15:43:19.0390 */ Call Guide "OBJSTR:Class:Hierachy:GenerateHierarchy3Levels" (return).
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class_ConcatPermission01" (400)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "SHR:Objstr_Menu_Push0" (499)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class_zIntCascadeDeleteLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-zIntFinalLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-zIntClassTypeLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-zIntExposureLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-zIntSingletonLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-zIntAbstractLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class_OnSave_ParseAuditQualification" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-zIntStagingAreaSupportLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class_zIntCardinalityLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class_zIntWeakReferenceLookup" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-Class2InstanceId-LookUp" (500)
+      
+ 1         >    --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-Class1InstanceId-LookUp" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:Class-UpdateSuperClass" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "OBJSTR:DeleteEntry" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "SHR:Objstr_Menu_Delete" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "SHR:Objstr_Menu_Modify_ClassName" (500)
+          --> Passed -- perform actions
+               0 : Call Guide "SHR:Objstr_Menu_Modify"
+       /* Tue Dec 04 2018 15:43:19.0390 */ No filters in this guide
+       /* Tue Dec 04 2018 15:43:19.0390 */ Call Guide "SHR:Objstr_Menu_Modify" (return).
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "SHR:Objstr_Menu_Push1`!" (500)
+          --> Passed -- perform actions
+               0 : Push Fields -> "SHR:SchemaNames"
+                     Class Name (490001100) = BT_AlgorexComponent
+                     Class2InstanceId (400116800) = 
+                     Class1InstanceId (400116700) = 
+                     zIntAbstract (400114000) = 0
+                     zIntClassType (400112800) = 1
+                     Namespace (400109900) = BT.CORE
+                     Keyword_Lookup (301291800) = 0
+                     OSSchemaName (301170700) = BT.CORE:BT_Component
+                     Has UI (301153000) = 1
+                     zTmpClass Name (301144700) = BT_Component
+                     zTmpClassID (301144600) = BT_Component
+                     ClassID01 (301142000) = BT_ALGOREXCOMPONENT
+                     Class Name01 (301141900) = BT_AlgorexComponent
+                     zIntCategorizationSubclass (301045500) = 1
+                     Lookup Keyword (230000009) = BT_ALGOREXCOMPONENT
+       /* Tue Dec 04 2018 15:43:19.0390 */    Start filter processing (phase 1) -- Operation - CREATE on SHR:SchemaNames - 
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:CheckFormCode_100_Message" (100)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:ValidateRequiredCheckboxes_105_Message" (105)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:CheckFormLookupUnique_110" (110)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:CheckFormLookupUnique_111_Message" (111)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:CheckFormLookupUniqueSchema_120" (120)
+    
+ 390620   >      --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:CheckFormLookupUniqueSchema_121_Message" (121)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:FormLookupSetKeyword_130" (130)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:CheckUniqueUserDefinedPrefix_150" (150)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SSN:CheckUniqueUserDefinedPrefix_151_Message" (151)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SHR:ObjstrMenuMenuCallGuide_500" (500)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     zIntLevel (301202700) = 1
+               1 : Call Guide "FND:SSN:Objstr_Menu"
+       /* Tue Dec 04 2018 15:43:19.0390 */  Checking "FND:SHR:ObjstrMenuSetProperName_500" (500)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     Proper Name (260000000) = 
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500_0" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500_1" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500_2" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500" (500)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     User Class Name01 (301145800) = 
+               1 : Set Fields
+                     zTmpUserClassName (301146800) = BT_Component
+               2 : Set Fields
+                     User Class Name10 (301146700) = 
+                     ClassID10 (301143800) = 
+                     Class Name10 (301142900) = 
+               3 : Set Fields
+                     User Class Name09 (301146600) = 
+                     ClassID09 (301143700) = 
+                     Class Name09 (301142800) = 
+               4 : Set Fields
+                     User Class Name08 (301146500) = 
+                     ClassID08 (301143600) = 
+                     Class Name08 (301142700) = 
+               5 : Set Fields
+                     User Class Name07 (301146400) = 
+  
+ ID: 0022645896>                   ClassID07 (301143500) = 
+                     Class Name07 (301142600) = 
+               6 : Set Fields
+                     User Class Name06 (301146300) = 
+                     ClassID06 (301143400) = 
+                     Class Name06 (301142500) = 
+               7 : Set Fields
+                     User Class Name05 (301146200) = 
+                     ClassID05 (301143300) = 
+                     Class Name05 (301142400) = 
+               8 : Set Fields
+                     User Class Name04 (301146100) = 
+                     ClassID04 (301143200) = 
+                     Class Name04 (301142300) = 
+               9 : Set Fields
+                     User Class Name03 (301146000) = 
+                     ClassID03 (301143100) = 
+                     Class Name03 (301142200) = 
+               10 : Set Fields
+                     User Class Name02 (301145900) = 
+                     ClassID02 (301143000) = BT_ALGOREXCOMPONENT
+                     Class Name02 (301142100) = BT_AlgorexComponent
+               11 : Set Fields
+                     ClassID01 (301142000) = BT_Component
+                     Class Name01 (301141900) = BT_Component
+               12 : Set Fields
+                     zTmpClass Name (301144700) = BMC_BaseElement
+                     zTmpClassID (301144600) = BMC_ASSETBASE
+               13 : Set Fields
+                     zTmpUserClassName (301146800) = Base Element
+               14 : Set Fields
+                     zIntLevel (301202700) = 2
+               15 : Goto Guide Label
+               Skip actions, goto guide label LOOP
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500_0" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500_1" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500_2" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500" (500)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     User Class Name01 (301145800) = BT_Component
+               1 : Set Fields
+                 
+    zTmpUserClassName (301146800) = Base Element
+               2 : Set Fields
+                     User Class Name10 (301146700) = 
+                     ClassID10 (301143800) = 
+                     Class Name10 (301142900) = 
+               3 : Set Fields
+                     User Class Name09 (301146600) = 
+                     ClassID09 (301143700) = 
+                     Class Name09 (301142800) = 
+               4 : Set Fields
+                     User Class Name08 (301146500) = 
+                     ClassID08 (301143600) = 
+                     Class Name08 (301142700) = 
+               5 : Set Fields
+                     User Class Name07 (301146400) = 
+                     ClassID07 (301143500) = 
+                     Class Name07 (301142600) = 
+               6 : Set Fields
+                     User Class Name06 (301146300) = 
+                     ClassID06 (301143400) = 
+                     Class Name06 (301142500) = 
+               7 : Set Fields
+                     User Class Name05 (301146200) = 
+                     ClassID05 (301143300) = 
+                     Class Name05 (301142400) = 
+               8 : Set Fields
+                     User Class Name04 (301146100) = 
+                     ClassID04 (301143200) = 
+                     Class Name04 (301142300) = 
+               9 : Set Fields
+                     User Class Name03 (301146000) = 
+                     ClassID03 (301143100) = BT_ALGOREXCOMPONENT
+                     Class Name03 (301142200) = BT_AlgorexComponent
+               10 : Set Fields
+                     User Class Name02 (301145900) = BT_Component
+                     ClassID02 (301143000) = BT_Component
+                     Class Name02 (301142100) = BT_Component
+               11 : Set Fields
+                     ClassID01 (301142000) = BMC_ASSETBASE
+                     Class Name01 (301141900) = BMC_BaseElement
+               12 : Set Fields
+                     zTmpClass Name (301144700) = 
+                     zTmpClassID (301144600) = 
+               13 : Set Fields
+                     zTmpUserClassName (301146800) = 
+               14 : Set Fields
+                     zIntLevel (301202700) = 3
+               15
+ : Goto Guide Label
+               Skip actions, goto guide label LOOP
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500_0" (500)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     User Class Name01 (301145800) = Base Element
+       /* Tue Dec 04 2018 15:43:19.0540 */  Checking "FND:SHR:ObjstrMenuMenu_500_1" (500)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "FND:SHR:ObjstrMenuMenu_500_2" (500)
+          --> Passed -- perform actions
+               0 : Exit Guide "FND:SSN:Objstr_Menu"
+               Exit current guide: FND:SSN:Objstr_Menu
+       /* Tue Dec 04 2018 15:43:19.0700 */ Call Guide "FND:SSN:Objstr_Menu" (return).
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "FND:SSN:SetProperName_501" (501)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     Proper Name (260000000) = 
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "FND:SHR:ObjstrMenuSetSchemaName_600_1" (600)
+          --> Passed -- perform actions
+               0 : Set Fields
+                     OSSchemaName (301170700) = BT.CORE:BT_AlgorexComponent
+                     Schema Name (230000000) = AST:BT_AlgorexComponent
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "INT:ASIFND:SSN:CreateClassInAstAdvSearchCriteria_600" (600)
+          --> Passed -- perform actions
+               0 : Push Fields -> "AST:AssetAdvancedSearchCriteria"
+                     
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "FND:SSN:SetClassID_900" (900)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "FND:SSN:SetClassID_901" (900)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "FND:SSN:SetUserDisplayName_900" (900)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "FND:SSN:SetUserDisplayName_901" (900)
+          --> Failed qualification
+       /* Tue Dec 04 2018 15:43:19.0700 */    End of filter processing (phase 1) -- Operation - CREATE on SHR:SchemaNames - 
+       /* Tue Dec 04 2018 15:43:19.0700 */    Restart of filter processing (phase 2) -- Operation - CREATE on SHR:SchemaNames - 000000000028832
+       /* Tue Dec 04 2018 15:43:19.0700 */  Checking "INT:ASIFND:SSN:CreateClassInAstAdvSearchCriteria_600" (600)
+               0 : Push Fields -> "AST:AssetAdvancedSearchCriteria"
+                     
+                     Schema_Names_InstanceId (303770300) = AGGAJRQ7IL9MJAP9HY2HP80VXD6D5N
+                     Search CI Type Label (303407400) = Search Criteria for 
+                     Use CI Type Extension (303407300)
+ = 1
+                     Search CI Type Groups (303407200) = BT_Component
+                     Search On (303407100) = All
+                     Relation Schema Name (303390300) = AST:BT_AlgorexComponent
+                     Search CI Type (303389900) = 
+                     CI Type Class ID (301704800) = BT_ALGOREXCOMPONENT
+                     Short Description (8) = 
+                     Status (7) = 1
+       /* Tue Dec 04 2018 15:43:19.0850 */ **** Error while performing filter action. Error Number: 326
+       /* Tue Dec 04 2018 15:43:19.0850 */ ERROR (326): Required field cannot be blank.; AST:AssetAdvancedSearchCriteria : Short Description
+       /* Tue Dec 04 2018 15:43:19.0850 */ **** Filter "INT:ASIFND:SSN:CreateClassInAstAdvSearchCriteria_600": No enabled error handler
+       /* Tue Dec 04 2018 15:43:19.0850 */    End of filter processing (phase 2) -- Operation - CREATE on SHR:SchemaNames - 000000000028832
+       /* Tue Dec 04 2018 15:43:19.0850 */ **** Error while performing filter action. Error Number: 326
+       /* Tue Dec 04 2018 15:43:19.0850 */ ERROR (326): Required field cannot be blank.; AST:AssetAdvancedSearchCriteria : Short Description
+       /* Tue Dec 04 2018 15:43:19.0850 */ **** Filter "SHR:Objstr_Menu_Push1`!": No enabled error handler
+       /* Tue Dec 04 2018 15:43:19.0850 */    End of filter processing (phase 1) -- Operation - SET on OBJSTR:Class - 000000000002101
+ (ARNOTE 8914)
+<CLAT> /* Tue Dec 04 2018 15:44:02.497 */+API call, Procedure #7
+<CLAT> /* Tue Dec 04 2018 15:44:02.499 */-API call, Procedure #7
+<CLAT> /* Tue Dec 04 2018 15:44:02.499 */+API call, Procedure #183
+<CLAT> /* Tue Dec 04 2018 15:44:02.569 */-API call, Procedure #183
+ (ARNOTE 8914)
+Logging...
